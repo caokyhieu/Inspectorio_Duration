@@ -18,6 +18,8 @@ def preprocessCategory(cat_str):
         v = v.rstrip('s')
         if 'boot' in v:
             v = 'boot'
+        elif 'tee' in v:
+            v = 'tee'
         elif 'crew' in v:
             v = 'crew'
         cat_result.append(v)
